@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITACE Plantel Reynosa | Bachillerato Tecnico</title>
+    <link rel="stylesheet" href="estilos3.css">
+</head>
+<body>
+<!--portada principal de la pagina-->
+    <section class="portada" id="inicio">
+
+        <!--esto sirve para poner una imagen de fondo en un texto-->
+        <figure class="portada-fondo">
+            <img src="imagen/grupob.jpeg" alt="Alumnos del ITACE">
+        </figure>
+
+        <!--este es para el logotipo del itace-->
+        <header class="encabezado menu-fijo">
+    <a class="marca" href="#inicio">
+      <img src="imagen/abeja.png" alt="Logotipo del ITACE" class="logo">
+      <span>ITACE <small>Plantel Reynosa</small></span>
+    </a>
+
+
+   
+    <!--botoncitos de la esquina superior de la derecha-->
+    <nav aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#descripccion">Descripcción</a>
+      <a href="#historia">Historia</a>
+      <a href="#identidad">Valores</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#inscripcion">Inscripción</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#directorio">Directorio</a>
+      <a href="#ubicacion">Ubicación</a>
+     
+
+
+      <details class="menu-mas">
+                <summary>MÁS ▾</summary>
+                <div class="menu-mas-lista">
+                    <a href="#himnos">Himnos</a>
+                    <a href="#vida-estudiantil">Proyectos estudiantiles</a>
+                    <a href="#noticias">Noticias</a>
+                    <a href="#preguntas">Preguntas frecuentes</a>
+                </div>
+        </details>
+
+
+    <!--titulo, descripcion y botones-->
+  </header>
+   <div class="portada-texto">
+    <h1>Instituto Tamaulipeco de Capacitacion para el Enpleo</h1>
+    <p>El Instituto Tamaulipeco de Capacitación para el Empleo ofrece bachillerato tecnológico en Reynosa: estudias la preparatoria y te formas en una especialidad técnica.</p>
+    <div class="acciones">
+      <a class="boton" href="#inscripcion">Cómo inscribirme</a>
+      <a class="boton vacio" href="#especialidades">Ver especialidades</a>
+    </div>
+  </div>
+</section>
+
+<main>
+    <!--tarjeta sobre el borde de la portada -->
+  <section class="datos" aria-label="Datos del plantel" id="inicio">
+    <div>
+        <strong>1,452</strong>
+        <span>alumnos en el ciclo 2025-2026</span>
+    </div>
+    <div>
+        <strong>7</strong>
+        <span>especialidades de bachillerato tecnológico</span>
+    </div>
+    <div>
+        <strong>1984</strong>
+        <span>año de creación del ITACE</span>
+    </div>
+    <div>
+        <strong>2</strong>
+        <span>turnos: matutino y vespertino</span>
+    </div>
+  </section>
+
+  <!--breve descripcion de la escuela-->
+  <section class="escuela" id="descripccion">
+    <figure>
+      <img src="imagen/entrada.jpeg" alt="Fachada del plantel Reynosa">
+    </figure>
+    <div class="descripccion-texto">
+
+      <p class="etiqueta">Quiénes somos?</p>
+      <h2>ITACE: educación y preparación para el futuro laboral</h2>
+      <p>El Instituto Tamaulipeco de Capacitación para el Empleo (ITACE) es una institución pública del Gobierno de Tamaulipas.
+        Fue establecido en 1984 para preparar a las personas de acuerdo con las necesidades de las empresas y los servicios.</p>
+      <p>En 1991, el instituto amplió sus actividades y comenzó a ofrecer estudios de nivel medio superior. 
+        Actualmente, tiene planteles en Ciudad Victoria, Altamira, Reynosa y Matamoros.</p>
+      <p>La sede de Reynosa brinda atención principalmente a los jóvenes de la localidad que desean continuar sus estudios y adquirir conocimientos para su futuro profesional.</p>
+
+    </div>
+  </section>
+</main>
+
+
+
+<!-- CARRUSEL DE DIRECTORES GENERALES DEL ITACE -->
+<section class="galeria-persona" id="historia">
+
+    <div class="titulo-galeria">
+        <div>
+            <h2>Directores Generales del ITACE</h2>
+            <p>CONOCE SU HISTORIA</p>
+        </div>
+        <div class="linea-dorada"></div>
+    </div>
+
+    <div class="persona-principal">
+
+        <div class="zona-retrato">
+
+            <button class="flecha-persona anterior"
+                id="persona-anterior"
+                aria-label="Director anterior">‹</button>
+
+            <div class="marco-hexagonal">
+                <img id="imagen-persona"
+                    src="imagen/lerma anaya.png"
+                    alt="Prof. Arturo Lerma Anaya">
+            </div>
+
+            <button class="flecha-persona siguiente"
+                id="personaje-siguiente"
+                aria-label="Siguiente director">›</button>
+
+            <span class="contador-persona"
+                id="contador-personaje">01 / 09</span>
+
+        </div>
+
+        <div class="datos-persona">
+            <p class="cargo-persona" id="cargo-persona">
+                Director (1984-1999)
+            </p>
+
+            <h3 id="nombre-persona">Prof. Arturo Lerma Anaya</h3>
+
+            <div class="adorno-dorado">━━━━━━━━━━━━</div>
+
+            <p id="descripcion-persona"></p>
+
+            <ul id="detalles-persona"></ul>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- BOTÓN Y LÍNEA DEL TIEMPO DEL ITACE -->
+<section class="historia-itace" id="historia">
+
+    <div class="historia-contenido" id="historia-contenido" hidden>
+        <h2>Línea del tiempo del ITACE</h2>
+        <p class="historia-intro">
+            Conoce los acontecimientos más importantes en la historia de nuestra institución.
+        </p>
+
+        <div class="fechas-itace">
+
+            <article class="fecha-itace">
+                <span class="anio-itace">1984</span>
+                <h3>Fundación del ITACE</h3>
+                <p>Se fundó en Ciudad Victoria el primer plantel del Instituto Tamaulipeco de Capacitación para el Empleo, durante el gobierno del Dr. Emilio Martínez Manautou, con el objetivo de preparar y capacitar a los alumnos para el empleo calificado.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">1991</span>
+                <h3>Expansión a nuevos municipios</h3>
+                <p>Se firmó un convenio con la Secretaría de Educación Pública para la creación, operación y apoyo financiero de las unidades de Altamira y Reynosa.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">1992–1993</span>
+                <h3>Unidad de Matamoros</h3>
+                <p>Se elaboró el Anexo de Ejecución para incorporar la Unidad de Matamoros a partir de 1993.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">1994</span>
+                <h3>Formación técnica profesional</h3>
+                <p>El plantel Victoria incorporó carreras terminales como Mecánica Automotriz, Soldadura Industrial, Electricidad, Electrónica y otras especialidades técnicas.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">1998</span>
+                <h3>Bachillerato tecnológico</h3>
+                <p>El ITACE transformó su oferta educativa de carreras terminales a carreras profesionales con bachillerato tecnológico, combinando la formación técnica con la posibilidad de continuar estudios superiores.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2004</span>
+                <h3>Nuevo modelo educativo</h3>
+                <p>Se implementó un modelo con enfoque constructivista y formación profesional basada en competencias.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2008</span>
+                <h3>Reforma Integral de la Educación Media Superior</h3>
+                <p>Entró en vigor la RIEMS, con cambios relacionados con las competencias, las modalidades educativas, la gestión escolar y la certificación de los egresados.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2013</span>
+                <h3>Actualización de los planes de estudio</h3>
+                <p>Se modificaron los planes del bachillerato tecnológico para incorporar materias como Ética, Filosofía y Ciencia, Tecnología, Sociedad y Valores. También se evaluaron planteles para su ingreso al Sistema Nacional de Bachillerato.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2014</span>
+                <h3>Evaluación docente</h3>
+                <p>Se implementó un sistema para el ingreso, la promoción, el reconocimiento y la permanencia de docentes y directivos mediante evaluaciones profesionales.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2015</span>
+                <h3>Evaluación al desempeño</h3>
+                <p>Comenzó la evaluación al desempeño docente. Durante tres años fueron evaluados 136 docentes del ITACE.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2017</span>
+                <h3>Nuevo Modelo Educativo</h3>
+                <p>Surgió un modelo centrado en las necesidades de las escuelas, con aprendizajes clave, desarrollo personal y social, autonomía curricular y habilidades socioemocionales.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2019</span>
+                <h3>Nueva Escuela Mexicana</h3>
+                <p>Se expidió la Ley General del Sistema para la Carrera de las Maestras y los Maestros. Ese mismo año surgieron los principios de la Nueva Escuela Mexicana, con una educación humanista, científica y tecnológica.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">2021</span>
+                <h3>Propuesta de nuevo marco curricular</h3>
+                <p>Se impulsó una propuesta centrada en el desarrollo integral del estudiante, la comunicación, el pensamiento matemático, la historia, la cultura digital y las habilidades socioemocionales.</p>
+            </article>
+
+            <article class="fecha-itace">
+                <span class="anio-itace">Actualidad</span>
+                <h3>Capacitación docente</h3>
+                <p>Según la información proporcionada, 167 docentes del ITACE se encuentran capacitándose en los principios y las orientaciones filosóficas de la Nueva Escuela Mexicana.</p>
+            </article>
+
+        </div>
+    </div>
+
+    <button
+        class="boton-historia"
+        id="boton-historia"
+        type="button"
+        aria-expanded="false"
+        aria-controls="historia-contenido">
+
+        <span id="texto-boton-historia">Ver línea del tiempo</span>
+        <span class="flecha-historia" id="flecha-historia">↓</span>
+
+    </button>
+
+</section>
+
+
+
+
+
+<!-- ====================MISIÓN, VISIÓN Y VALORES DEL ITACE======================== -->
+
+<section class="identidad-itace" id="identidad">
+
+    <div class="identidad-encabezado">
+        <span class="identidad-etiqueta">
+            Valores del ITACE
+        </span>
+
+    </div>
+
+    <div class="identidad-tarjetas">
+
+        <article class="identidad-tarjeta">
+
+            <img
+                src="imagen/alumna.jpg"
+                alt="Estudiantes realizando actividades académicas"
+                loading="lazy"
+            >
+
+            <div class="identidad-contenido">
+
+                <h3>Misión</h3>
+
+                <p>
+                    Ofrecer bachillerato tecnológico y capacitación
+                    para el trabajo formando personal calificado,
+                    para satisfacer la demanda laboral del sector
+                    productivo, impulsando el desarrollo económico
+                    del país.
+                </p>
+            </div>
+
+        </article>
+
+        <article class="identidad-tarjeta">
+
+            <img
+                src="imagen/vision.jpg"
+                alt="Estudiantes preparándose para su futuro profesional"
+                loading="lazy"
+            >
+
+            <div class="identidad-contenido">
+
+                <h3>Visión</h3>
+
+                <p>
+                    Ser reconocidos como la mejor opción educativa
+                    tecnológica, contribuyendo a mejorar la calidad
+                    de vida de jóvenes y adultos.
+                </p>
+            </div>
+
+        </article>
+
+        <!-- VALORES -->
+        <article class="identidad-tarjeta">
+
+            <img
+                src="imagen/mision.jpeg"
+                alt="Estudiantes del ITACE trabajando en equipo"
+                loading="lazy"
+            >
+
+            <div class="identidad-contenido">
+
+                <h3>Valores</h3>
+
+                <p>El ITACE tiene como propósitos fundamentales cultivar un mejor sistema de valores, 
+                   fomentar la excelencia educativa, y vincular el sistema educativo a las necesidades 
+                   del sector productivo demandante de la mano de obra calificada.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Lealtad:</strong>
+                        Identificación con la institución y sus ideales.
+                    </li>
+
+                    <li>
+                        <strong>Honor:</strong>
+                        Actuar de manera que merezcamos respeto.
+                    </li>
+
+                    <li>
+                        <strong>Unidad y Trabajo:</strong>
+                        Unir esfuerzos para obtener excelentes resultados.
+                    </li>
+
+                    <li>
+                        <strong>Calidad Profesional:</strong>
+                        Personal calificado en constante formación.
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================
+     APARTADO DE HIMNOS DEL ITACE
+===================================== -->
+
+<section class="himnos-itace" id="himnos">
+
+    <div class="himnos-encabezado">
+        <span class="himnos-etiqueta">
+            IDENTIDAD INSTITUCIONAL
+        </span>
+
+        <h2>Himnos</h2>
+
+        <p>
+            Símbolos que representan nuestra identidad,
+            nuestros valores y el orgullo de pertenecer al ITACE.
+        </p>
+
+        <div class="himnos-linea"></div>
+    </div>
+
+    <div class="himnos-lista">
+
+        <!-- HIMNO NACIONAL MEXICANO -->
+        <article class="himno-panoramico">
+
+            <div class="himno-imagen">
+                <img
+                    src="imagen/banda de guerra.jpeg"
+                    alt="Imagen del Himno Nacional Mexicano"
+                >
+                <span class="himno-sello">MÉXICO</span>
+            </div>
+
+            <div class="himno-info">
+                <span class="himno-categoria">
+                    SÍMBOLO NACIONAL
+                </span>
+
+                <h3>Himno Nacional Tamaulipeco</h3>
+
+                <p>
+                    Una expresión de nuestra historia,
+                    identidad y orgullo Tamaulipeco.
+                </p>
+
+                <div class="himno-audio">
+                    <audio controls preload="metadata">
+                        <source
+                            src="audio-video/himno tamaulipas (2).mp3"
+                            type="audio/mpeg"
+                        >
+                        Tu navegador no puede reproducir este audio.
+                    </audio>
+                </div>
+
+                <button
+                    class="boton-letra"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="letra-nacional"
+                    onclick="mostrarLetra('letra-nacional', this)"
+                >
+                    <span>＋</span> Consultar la letra
+                </button>
+
+                <div class="letra-himno" id="letra-nacional" hidden>
+                    <h4>Letra del Himno de Tamaulipas</h4>
+
+                    <p>
+                        Himno de Tamaulipas 
+                        Viva Tamaulipas altiva y heroica, 
+                        la región que dormita en la margen del río. 
+                        La sangre palpita en el pecho mío, 
+                        al recuerdo glorioso de sus héroes y su honor. 
+                        Viva Tamaulipas la tierra querida 
+                        que en las horas aciagas dio su sangre y su vida. 
+                        Cantemos un himno de amor y lealtad 
+                        y todo Tamaulipas vibre a la voz de libertad. 
+                        Fuiste cuna de nobles varones 
+                        que con la luz de su saber iluminaron, 
+                        y al pasar por la tierra dejaron 
+                        con sus obras su nombre inmortal. 
+                        Hoy la historia 
+                        canta la gloria 
+                        de tus hijos en marcha triunfal. 
+                        En los tiempos de duelo y de guerra 
+                        con tu valor fuiste el honor de nuestro suelo. 
+                        Defendiste heroica la tierra 
+                        y tu espada fue siempre inmortal. 
+                        Hoy la historia 
+                        canta la gloria 
+                        de tus hijos en marcha triunfal. 
+                        En tu seno de mirtos y rosas 
+                        fuente de amor en el hogar tamaulipeco. 
+                        ¡Son tus hijas mujeres virtuosas 
+                        que engalanan el patio vergel! 
+                        Hoy la historia 
+                        canta la gloria 
+                        con el mirto, la oliva y laurel. 
+                        Los que duermen eterno descanso, 
+                        los que por ti con fe y valor su vida dieron, 
+                        por hacerte feliz sucumbieron 
+                        bajo el fuego que te hizo inmortal.
+                        Hoy la historia 
+                        canta la gloria 
+                        de tus hijos en marcha triunfal. 
+                        
+                    </p>
+                </div>
+            </div>
+
+        </article>
+
+
+        <!-- HIMNO DEL ITACE -->
+        <article class="himno-panoramico">
+
+            <div class="himno-imagen">
+                <img
+                    src="imagen/grupob.jpeg"
+                    alt="Imagen institucional del ITACE"
+                >
+                <span class="himno-sello">ITACE</span>
+            </div>
+
+            <div class="himno-info">
+                <span class="himno-categoria">
+                    ORGULLO INSTITUCIONAL
+                </span>
+
+                <h3>Himno del ITACE</h3>
+
+                <p>
+                    Un símbolo que nos identifica como parte
+                    de nuestra comunidad educativa.
+                </p>
+
+                <div class="himno-audio">
+                    <audio controls preload="metadata">
+                        <source
+                            src="audio-video/audio del himno del itace.mp3"
+                            type="audio/mpeg"
+                        >
+                        Tu navegador no puede reproducir este audio.
+                    </audio>
+                </div>
+
+                <button
+                    class="boton-letra"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="letra-itace"
+                    onclick="mostrarLetra('letra-itace', this)"
+                >
+                    <span>＋</span> Consultar la letra
+                </button>
+
+                <div class="letra-himno" id="letra-itace" hidden>
+                    <h4>Letra del Himno del ITACE</h4>
+
+                    <p>
+                        HIMNO DEL ITACE 
+                        Región tan hermosa llevo en mi pensamiento 
+                        En mi corazón permanece la lealtad 
+                        Vamos compañeros estudiemos muy atentos 
+                        Nuestro tamaulipas sera el templo nacional
+                        
+                        Con la disciplina que aquí se nos imparte 
+                        Y los valores que son lo mas primordial 
+                        Seremos guerreros invencibles del ITACE 
+                        Los hombres que triunfan ante cualquier tempestad
+                        
+                        Amor a la vida es virtud del ser humano 
+                        ITACE te inculca el respeto y la verdad 
+                        La naturaleza y el aire que respiramos 
+                        Vamos a cuidarla y nuestra vida mejorar
+                        
+                        El ITACE es una escuela diferente 
+                        Incansable formador de hombres de bien 
+                        Para hacer mas grande a nuestro Tamaulipas 
+                        Nuestra patria que es mi México también
+                        
+                        Con todo respeto hoy le canto a mi escuela 
+                        Mi querido ITACE como mi casa es 
+                        Sangre y disciplina siento correr por mis venas 
+                        A mis compañeros jamás olvidaré
+                        
+                        Llevo en mi memoria a todos mis maestros 
+                        Sus conocimientos siempre los llevare 
+                        Con su orientación y con sus buenos consejos 
+                        Me dieron la herencia que cambio todo mi ser
+                        
+                        Llaman los tambores hoy escuchando estoy 
+                        Todas las cornetas con su voz hacen llamar 
+                        Formamos los técnicos tambien bachillerato 
+                        Va empezar la clase educación premilitar
+                        
+                        En los talleres trabajamos con esmero 
+                        En academia com mucha dedicación
+                        Lucharemos por que el ITACE sea el primero
+                        Un fiel ejemplo del estado y la nación
+                </div>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+ <!-- Especialidades carrucel orizontal-->
+  <section class="espec" id="especialidades">
+    <div class="espec-cab">
+      <p class="etiqueta">Oferta educativa</p>
+      <h2>Especialidades</h2>
+      <p>Las especialidades de bachillerato tecnológico que se imparten en el plantel Reynosa. Desliza para ver todas.</p>
+    </div>
+    <ul class="carrusel">
+
+    <li>
+        <h3><img src="imagen/programacion.jpg" alt="Mantenimiento industrial">Programación</h3>
+        <p>
+         te prepara para analizar, diseñar, desarrollar, instalar y mantener software de aplicación de acuerdo con las necesidades del usuario y del entorno laboral
+        </p>
+    </li>
+
+    <li >
+        <h3><img src="imagen/mantenimientoindustrial.jpeg" alt="mantenimiento industrial"> Mantenimiento Industrial</h3>
+        <p>Aprende a revisar, reparar y conservar máquinas y equipos industriales en buen estado. Esta especialidad ayuda a desarrollar habilidades para detectar fallas y prevenir problemas en los procesos de producción.</p>
+   </li>
+
+   <li>
+        <h3><img src="imagen/mantenimientiautomotris.jpeg" alt="mantenimiento Automotriz"> Mantenimiento Automotriz</h3>
+        <p>Conoce cómo funcionan los vehículos y aprende a realizar revisiones y reparaciones de sus diferentes sistemas. También podrás identificar fallas y comprender la importancia de mantener los automóviles en buenas condiciones.</p>
+   </li>
+
+   <li>
+        <h3><img src="imagen/diseñografico.jpeg" alt="diseño grafico"> Diseño Gráfico Digital</h3>
+        <p>Desarrolla tu creatividad mediante la creación de ilustraciones, carteles, logotipos y otros contenidos visuales. Aprende a combinar colores, formas, imágenes y tipografías para comunicar ideas de manera atractiva.</p>
+   </li>
+
+   <li>
+        <h3><img src="imagen/ciberseguridad.jpeg" alt="Ciberseguridad"> Ciberseguridad</h3>
+        <p>Aprende sobre la protección de computadoras, redes y datos frente a amenazas digitales. Conoce la importancia de mantener segura la información, identificar riesgos y utilizar herramientas para prevenir accesos no autorizados.</p>
+   </li>
+
+   <li>
+        <h3><img src="imagen/electronica.jpeg" alt="Semiconductores y microelectrónica"> Semiconductores y Microelectrónica</h3>
+        <p>Descubre cómo se diseñan y funcionan los pequeños componentes electrónicos presentes en computadoras, celulares y otros dispositivos. Explora los principios de la microelectrónica y su importancia en el desarrollo de nuevas tecnologías.</p>
+   </li>
+
+   <li>
+        <h3><img src="imagen/inteligenciaartificial.jpeg" alt="inteligencia artificial">Inteligencia Artificial</h3>
+        <p>Explora cómo las computadoras pueden analizar información, reconocer patrones y realizar tareas que requieren inteligencia. Conoce aplicaciones de esta tecnología y cómo se utiliza para resolver problemas en diferentes áreas.</p>
+   </li>
+
+   <li>
+        <h3><img src="imagen/logistica.jpeg" alt="logistica"> Logística</h3>
+        <p>Aprende cómo se organizan y coordinan el almacenamiento, transporte y distribución de productos. Esta área busca que los materiales y mercancías lleguen al lugar correcto, en el momento adecuado y de manera eficiente.</p>
+   </li>
+   </ul>
+
+    <p class="nota">Las especialidades pueden cambiar de un ciclo escolar a otro. Confirma la oferta vigente directamente con el plantel.</p>
+   </section>
+
+
+   <!--Inscripción-->
+  <section class="inscripcion" id="inscripcion">
+    <div class="inscripcion-texto">
+      <p class="etiqueta">Ingreso</p>
+      <h2>Preinscripción e inscripción</h2>
+      <p>Para conocer fechas, requisitos y documentos del proceso de ingreso, comunícate con el plantel o con la Dirección General del ITACE en Ciudad Victoria.</p>
+      <p>Los detalles exactos (fechas, costos y documentos) cambian cada ciclo escolar, por eso conviene consultarlos antes de acudir.</p>
+    </div>
+    <figure>
+      <img src="imagen/ITACE.jpeg" alt="entrada">
+    </figure>
+  </section>
+
+
+<!-- Cursos de los sábados -->
+<section class="espec" id="cursos">
+    <div class="espec-cab">
+        <p class="etiqueta">Capacitación sabatina</p>
+        <h2>Cursos de los sábados</h2>
+        <p>
+            Aprende nuevas habilidades y desarrolla tus conocimientos
+            con los cursos que ofrece el plantel los sábados.
+        </p>
+    </div>
+
+    <ul>
+        <li>
+            <h3> Inglés básico</h3>
+            <p>Aprende vocabulario y expresiones sencillas para comunicarte en inglés.</p>
+        </li>
+
+        <li>
+            <h3>🗣️ Inglés intermedio</h3>
+            <p>Mejora tu comprensión y aprende a comunicarte con mayor confianza.</p>
+        </li>
+
+        <li>
+            <h3>🌎 Inglés avanzado</h3>
+            <p>Perfecciona tus habilidades de comunicación y comprensión del idioma.</p>
+        </li>
+
+        <li>
+            <h3>⚡ Electricidad</h3>
+            <p>Conoce los fundamentos de la electricidad y sus aplicaciones.</p>
+        </li>
+
+        <li>
+            <h3>❄️ Mantenimiento de aires acondicionados</h3>
+            <p>Aprende sobre el cuidado y mantenimiento de equipos de aire acondicionado.</p>
+        </li>
+
+        <li>
+            <h3>🎨 Canva</h3>
+            <p>Diseña carteles, presentaciones y contenido creativo de manera digital.</p>
+        </li>
+
+        <li>
+            <h3>💅 Aplicación de uñas</h3>
+            <p>Conoce técnicas básicas para el diseño y la decoración de uñas.</p>
+        </li>
+
+        <li>
+            <h3>📊 Excel</h3>
+            <p>Aprende a organizar datos, utilizar fórmulas y crear tablas.</p>
+        </li>
+
+        <li>
+            <h3>📸 Fotografía</h3>
+            <p>Descubre técnicas para tomar fotografías y mejorar tus composiciones.</p>
+        </li>
+    </ul>
+
+    <p class="nota">
+        Consulta directamente con el plantel los horarios, costos
+        y disponibilidad de los cursos sabatinos.
+    </p>
+</section>
+
+
+
+<!--galeria-->
+<section class="galeria" id="galeria">
+
+    <div class="galeria-encabezado">
+        <span class="galeria-etiqueta">NUESTRAS INSTALACIONES</span>
+        <p>Explora los espacios que forman parte de nuestra institución.</p>
+    </div>
+
+    <!-- BOTONES DE CATEGORÍAS -->
+    <div class="botones-galeria">
+        <button class="boton-galeria activo"
+                onclick="mostrarGaleria('instalaciones', this)">
+            Instalaciones
+        </button>
+
+        <button class="boton-galeria"
+                onclick="mostrarGaleria('deportes', this)">
+            Deportes y transporte
+        </button>
+
+        <button class="boton-galeria"
+                onclick="mostrarGaleria('jardines', this)">
+            Jardines y áreas verdes
+        </button>
+
+        <button class="boton-galeria"
+                onclick="mostrarGaleria('estudiantes', this)">
+            Espacios estudiantiles
+        </button>
+    </div>
+
+    <!-- INSTALACIONES: CATEGORÍA INICIAL -->
+    <div class="contenido-galeria activa" id="instalaciones">
+        <div class="galeria-fotos">
+
+            <figure class="foto">
+                <img src="imagen/entrada.jpeg" alt="Entrada de la institución">
+                <figcaption>Entrada de la institución</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagen/ITACE.jpeg" alt="ITACE Plantel Reynosa">
+                <figcaption>ITACE Plantel Reynosa</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/escuela.jpeg" alt="Instalaciones escolares">
+                <figcaption>Instalaciones escolares</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/escuela2.jpeg" alt="Edificio escolar">
+                <figcaption>Edificio escolar</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/baños.jpeg" alt="Baños de la institución">
+                <figcaption>Baños, fila C</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/enfermeria.jpeg" alt="Baños de la institución">
+                <figcaption>enfermeria</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/maquinas .jpeg" alt="Baños de la institución">
+                <figcaption>Maquinas</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/comedores.jpeg" alt="Baños de la institución">
+                <figcaption>Comedores</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/direccion.jpeg" alt="Baños de la institución">
+                <figcaption>Direccion</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- DEPORTES Y TRANSPORTE -->
+    <div class="contenido-galeria" id="deportes">
+        <div class="galeria-fotos">
+
+            <figure class="foto">
+                <img src="imagenes2/cancha.jpeg" alt="Cancha escolar">
+                <figcaption>Cancha</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagen/banda de guerra.jpeg" alt="Cancha escolar">
+                <figcaption>Cancha</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/feria botargas.jpeg" alt="Cancha escolar">
+                <figcaption>Cancha</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/grupo.jpeg" alt="Cancha escolar">
+                <figcaption>Cancha</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/pintura feria.jpeg" alt="Cancha escolar">
+                <figcaption>Cancha</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/botargas4.jpeg" alt="Autobús escolar">
+                <figcaption>Autobús</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/autobus.jpeg" alt="Autobús escolar">
+                <figcaption>Autobús</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- JARDINES Y ÁREAS VERDES -->
+    <div class="contenido-galeria" id="jardines">
+        <div class="galeria-fotos">
+
+            <figure class="foto">
+                <img src="imagenes2/cactus.jpeg" alt="Cactus">
+                <figcaption>Cactus</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/cenizo2.jpeg" alt="Cenizo">
+                <figcaption>Cenizo</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/flores de anacahuita (2).jpeg" alt="Flores de anacahuita">
+                <figcaption>Anacahuita</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/flores moradas.jpeg" alt="Flores moradas">
+                <figcaption>Flores moradas</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/jardin.jpeg" alt="Jardín escolar">
+                <figcaption>Jardín</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/palmeras.jpeg" alt="Palmeras">
+                <figcaption>Palmeras</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/plantas de limon.jpeg" alt="Plantas de limón">
+                <figcaption>Plantas de limón</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/verde.jpeg" alt="Plantas de limón">
+                <figcaption>Plantas de limón</figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+    <!-- ESPACIOS ESTUDIANTILES -->
+    <div class="contenido-galeria" id="estudiantes">
+        <div class="galeria-fotos">
+
+            <figure class="foto">
+                <img src="imagenes2/parte de atras2.jpeg" alt="Parte trasera">
+                <figcaption>Parte trasera</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/mural.jpeg" alt="Mural escolar">
+                <figcaption>Mural</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/pasadiso.jpeg" alt="Pasadizo">
+                <figcaption>Pasadizo</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/pasillo2.jpeg" alt="Área de bancas">
+                <figcaption>Área de bancas</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/pasillo.jpeg" alt="Pasillo">
+                <figcaption>Pasillo</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/plaza del estudiante2.jpeg" alt="Plaza del estudiante">
+                <figcaption>Plaza del estudiante</figcaption>
+            </figure>
+
+            <figure class="foto">
+                <img src="imagenes2/manos2.jpeg" alt="Plaza del estudiante">
+                <figcaption>Plaza del estudiante</figcaption>
+            </figure>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--////////////////////Directorio/////////////-->
+
+
+<!-- DIRECTORIO DOCENTE -->
+<section class="directorio" id="directorio">
+
+        <!-- PORTADA DEL DIRECTORIO -->
+    <div class="portada-directorio">
+        <div class="contenido-portada">
+            <span>ITACE PLANTEL REYNOSA</span>
+            <h1>Directorio Docente</h1>
+            <p>Conoce a nuestro equipo académico</p>
+        </div>
+    </div>
+
+    <div class="directorio-encabezado">
+        <span class="directorio-etiqueta">
+            PERSONAL ACADÉMICO
+        </span>
+
+        <h2>Directorio docente</h2>
+
+        <p>
+            Consulta a nuestro personal docente,
+            sus academias y las materias que imparte.
+        </p>
+    </div>
+
+    <div class="directorio-contenedor">
+
+        <!-- BUSCADOR -->
+        <div class="directorio-busqueda">
+            <label for="buscar-docente">
+                Buscar docente o materia
+            </label>
+
+            <div class="directorio-input">
+                <span aria-hidden="true">⌕</span>
+
+                <input
+                    type="search"
+                    id="buscar-docente"
+                    placeholder="Escribe un nombre o materia..."
+                >
+            </div>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="directorio-filtros">
+
+            <div>
+                <label for="filtro-academia">
+                    Academia o área
+                </label>
+
+                <select id="filtro-academia">
+                    <option value="">Todas las academias</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="filtro-semestre">
+                    Semestre
+                </label>
+
+                <select id="filtro-semestre">
+                    <option value="">Todos los semestres</option>
+                </select>
+            </div>
+
+            <button type="button" id="limpiar-docentes">
+                Limpiar búsqueda
+            </button>
+
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="directorio-resultados">
+            <p id="total-docentes" aria-live="polite">
+                Cargando directorio...
+            </p>
+        </div>
+
+        <div
+            class="directorio-tarjetas"
+            id="lista-docentes"
+            aria-live="polite"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+
+
+  <!-- Ubicacióndel instituto-->
+  <section class="ubicacion" id="ubicacion">
+    <div class="ubicacion-cab">
+      <p class="etiqueta">Cómo llegar</p>
+      <h2>Dónde estamos</h2>
+    </div>
+    <figure class="mapa">
+      <img src="imagen/entrada principal.jpeg" alt="Entrada del plantel">
+    </figure>
+    <address class="direccion">
+      <div>
+        <h3>Dirección</h3>
+        <p>Plantel Reynosa<br>
+        Calle Octava y Zaragoza No. 515<br>
+        Col. Prolongación Las Cumbres<br>
+        C.P. 88745, Reynosa, Tamaulipas</p>
+      </div>
+      <div>
+        <h3>Horario de atención</h3>
+        <p>Lunes a Viernes de 7:00am - 6:30pm</p>
+        <p>Domingos y Sabados cerrado</p>
+      </div>
+      <div>
+        <a class="boton" href="https://www.google.com/maps/search/?api=1&query=ITACE+Plantel+Reynosa+Calle+Octava+y+Zaragoza+515+Reynosa" target="_blank" rel="noopener">Abrir en Google Maps</a>
+      </div>
+    </address> <!--sirve para poner información de contacto-->
+  
+
+    <div class="contacto-intro">
+      <p class="etiqueta">Hablemos</p>
+      <h2>Contacto</h2>
+      <p>Llama o escribe al plantel para resolver tus dudas sobre el ingreso y la oferta de especialidades.</p>
+      <a class="grande" href="tel:+528999240184">(899) 924-01-84</a>
+    </div>
+
+    <div class="contacto-lista">
+      <div>
+        <h3>Plantel Reynosa</h3>
+        <dl>
+          <dt>Teléfonos</dt>
+          <dd>
+            <a href="tel:+528999240184">(899) 924-01-84</a><br>
+            <a href="tel:+528999252403">(899) 925-24-03</a><br>
+            <a href="tel:+528999252386">(899) 925-23-86</a>
+          </dd>
+          <dt>Correo del plantel</dt>
+          <dd><a href="https://mail.google.com/mail/?view=cm&fs=1&to=correo@ejemplo.com">plantel.reynosa@itace.edu.mx</a></dd>
+          <dt>Encargada del despacho de la dirección</dt>
+          <dd>C. P. Martha Gabriela Reyes Anaya</dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Dirección General (Cd. Victoria)</h3>
+        <dl>
+          <dt>Domicilio</dt>
+          <dd>Blvd. Emilio Portes Gil No. 1836, C.P. 87039, Cd. Victoria, Tamaulipas</dd>
+          <dt>Teléfono</dt> <!--es el nombre de lo que buscas.-->
+          <dd><a href="tel:+528343164422">(834) 316-44-22</a></dd> <!--es el dato que corresponde a ese nombre-->
+          <dt>Sitio oficial</dt>
+          <dd><a href="https://itace.edu.mx" target="_blank" rel="noopener">itace.edu.mx</a></dd> <!--target="_blank":abre el enlace en otra pestaña. rel="noopener":añade una medida de seguridad al abrir esa pestaña.-->
+        </dl> <!--agrupa toda la información, agrupa toda la información-->
+      </div>
+      <div>
+        <h3>Redes sociales</h3>
+        <dl>
+          <dt>Facebook</dt>
+          <dd><a href= https://www.facebook.com/itaceplantelreynosa/>itace facebook</a></dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+<section class="preguntas-frecuentes" id="preguntas">
+
+    <div class="preguntas-encabezado">
+        <span class="preguntas-etiqueta">CENTRO DE AYUDA</span>
+        <h1>Preguntas frecuentes</h1>
+        <p>
+            Resolvemos las dudas más comunes sobre el ingreso,
+            las especialidades y la vida estudiantil en el ITACE
+            Plantel Reynosa.
+        </p>
+    </div>
+
+    <div class="preguntas-contenido">
+
+        <div class="preguntas-categoria">
+            <span>01</span>
+            <h2>Admisiones e inscripción</h2>
+        </div>
+
+        <details class="pregunta-item">
+            <summary>¿Qué necesito para ingresar al ITACE?</summary>
+            <p>
+                Debes consultar la convocatoria de ingreso vigente para
+                conocer los requisitos, documentos y fechas de inscripción.
+            </p>
+        </details>
+
+        <details class="pregunta-item">
+            <summary>¿Qué documentos solicitan para inscribirme?</summary>
+            <p>
+                Los documentos pueden variar según la convocatoria.
+                Consulta directamente con el plantel para obtener la lista
+                oficial y actualizada.
+            </p>
+        </details>
+
+        <details class="pregunta-item">
+            <summary>¿Cuándo comienzan las inscripciones?</summary>
+            <p>
+                Las fechas se establecen en cada convocatoria.
+                Mantente pendiente de los avisos oficiales del plantel.
+            </p>
+        </details>
+
+        <details class="pregunta-item">
+            <summary>¿Dónde puedo solicitar información para ingresar?</summary>
+            <p>
+                Puedes acudir al área administrativa del plantel o utilizar
+                los medios de contacto oficiales para preguntar por el
+                proceso de admisión.
+            </p>
+        </details>
+
+        <div class="preguntas-categoria">
+            <span>02</span>
+            <h2>Especialidades y estudios</h2>
+        </div>
+
+        <details class="pregunta-item">
+            <summary>¿Qué especialidades ofrece el ITACE Reynosa?</summary>
+            <p>
+                La oferta educativa puede incluir áreas técnicas como
+                mantenimiento industrial, mantenimiento automotriz,
+                diseño gráfico, ciberseguridad, electrónica, inteligencia
+                artificial y logística. Confirma cuáles están disponibles
+                en la convocatoria vigente.
+            </p>
+        </details>
+
+        <details class="pregunta-item">
+            <summary>¿Obtengo un certificado al terminar mis estudios?</summary>
+            <p>
+                Al concluir tus estudios puedes obtener la documentación
+                académica correspondiente, de acuerdo con el programa
+                cursado y los requisitos oficiales.
+            </p>
+        </details>
+
+        <details class="pregunta-item">
+            <summary>¿Puedo elegir mi especialidad?</summary>
+            <p>
+                La elección depende de la oferta disponible, los requisitos
+                de ingreso y el procedimiento de asignación del plantel.
+                Consulta las opciones antes de inscribirte.
+            </p>
+        </details>
+
+        <div class="preguntas-categoria">
+            <span>03</span>
+            <h2>Vida estudiantil</h2>
+        </div>
+
+        <details class="pregunta-item">
+            <summary>¿Qué turnos tiene el plantel?</summary>
+            <p>
+                Para conocer los turnos disponibles y los horarios de cada
+                especialidad, consulta directamente con el plantel, ya que
+                pueden variar según el programa escolar.
+            </p>
+        </details>
+
+        <details class="pregunta-item">
+            <summary>¿Se realizan actividades y eventos escolares?</summary>
+            <p>
+                En las instituciones educativas pueden organizarse
+                actividades académicas, culturales, deportivas y de
+                participación estudiantil. Consulta los avisos del plantel
+                para conocer los eventos programados.
+            </p>
+        </details>
+
+        <details class="pregunta-item">
+            <summary>¿Dónde puedo consultar las noticias y avisos?</summary>
+            <p>
+                Revisa los medios oficiales del ITACE y los avisos
+                publicados por el plantel para mantenerte al tanto de
+                fechas importantes, actividades y comunicados.
+            </p>
+        </details>
+
+    </div>
+
+    <div class="preguntas-ayuda">
+        <div>
+            <span class="preguntas-etiqueta">¿NECESITAS MÁS INFORMACIÓN?</span>
+            <h2>¿No encontraste tu respuesta?</h2>
+            <p>
+                Comunícate con el plantel para resolver tus dudas
+                directamente con el personal correspondiente.
+            </p>
+        </div>
+
+        <a href="contacto.html" class="preguntas-boton">
+            Ir a contacto <span>↗</span>
+        </a>
+    </div>
+</section>
+
+
+
+
+<section class="noticias" id="noticias">
+    <div class="noticias-encabezado">
+        <span class="noticias-etiqueta">ACTUALIDAD ITACE</span>
+        <h2>Noticias</h2>
+        <p>Conoce las actividades y los logros de nuestra comunidad.</p>
+    </div>
+
+    <article class="noticia-principal">
+        <img src="imagen/noticia-principal.jpg" alt="Banda de Guerra y Grupo de Danza del ITACE">
+        <div class="noticia-contenido">
+            <time datetime="2026-10-26">26 de octubre de 2026</time>
+            <h3>Talento y orgullo ITACE llegan a las secundarias de Reynosa</h3>
+            <p>
+                El ITACE Plantel Reynosa visitó la Escuela Secundaria Técnica No. 60
+                “Guillermo González Camarena”, donde estudiantes de la Banda de Guerra
+                y el Grupo de Danza destacaron con presentaciones llenas de talento,
+                disciplina y orgullo.
+            </p>
+            <p>
+                Además, se presentó la oferta educativa del plantel, acercando nuevas
+                oportunidades académicas a las futuras generaciones.
+            </p>
+        </div>
+    </article>
+
+    <h3 class="mas-noticias">Más noticias</h3>
+
+    <div class="noticias-grid">
+        <article class="noticia-tarjeta">
+            <img src="imagen/noticia1.jpg" alt="Plática de concientización sobre el cáncer de mama">
+            <div class="noticia-contenido">
+                <time datetime="2026-10-21">21 de octubre de 2026</time>
+                <h3>Cuidarnos es un acto de amor</h3>
+                <p>
+                    El ITACE Plantel Reynosa, en colaboración con el IMSS, realizó
+                    pláticas de concientización sobre el cáncer de mama, recordando
+                    a nuestra comunidad estudiantil la importancia de la autoexploración,
+                    la prevención y la detección temprana.
+                </p>
+                <p>
+                    Porque cuidar nuestra salud es cuidar nuestro futuro, y detectar
+                    a tiempo puede hacer la diferencia. ¡La prevención comienza con nosotros!
+                </p>
+            </div>
+        </article>
+
+        <article class="noticia-tarjeta">
+            <img src="imagen/noticia2.jpg" alt="Torneo interno amistoso de ajedrez">
+            <div class="noticia-contenido">
+                <time datetime="2026-10-21">21 de octubre de 2026</time>
+                <h3>ITACE Reynosa fortalece la mente y las emociones a través del ajedrez</h3>
+                <p>
+                    El ITACE Plantel Reynosa realizó un Torneo Interno Amistoso de Ajedrez
+                    como parte del programa “ABC de las Emociones”, promoviendo el
+                    pensamiento estratégico, la paciencia y la sana convivencia.
+                </p>
+                <p>
+                    ¡Felicidades a Carlos Naín Castillo Rivas, Esahú Guadalupe Salazar
+                    Hernández y José Israel Méndez Bustos por obtener el primer,
+                    segundo y tercer lugar, respectivamente!
+                </p>
+                <p>
+                    Esta actividad demuestra que aprender también significa fortalecer
+                    nuestras emociones y crecer juntos.
+                </p>
+            </div>
+        </article>
+
+        <article class="noticia-tarjeta">
+            <img src="imagen/noticia3.jpg" alt="Reconocimiento al ITACE por su participación en el Teletón 2026">
+            <div class="noticia-contenido">
+                <time datetime="2026-10-12">12 de octubre de 2026</time>
+                <h3>Un corazón que transforma vidas</h3>
+                <p>
+                    El ITACE Plantel Reynosa recibió un reconocimiento por obtener
+                    el primer lugar en la recaudación de donativos para el Teletón 2026.
+                    Gracias a la solidaridad de estudiantes, docentes, personal
+                    administrativo y familias, la comunidad educativa demostró que
+                    la unión y la generosidad pueden cambiar vidas.
+                </p>
+                <p>¡Orgullosamente ITACE, haciendo la diferencia!</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<section class="vida-interactiva" id="vida-estudiantil">
+    <header class="vida-titulo">
+        <p>ITACE PLANTEL REYNOSA</p>
+        <h2>Vida estudiantil</h2>
+        <span>Aprender, convivir y desarrollar talentos</span>
+    </header>
+
+    <nav class="vida-pestanas" aria-label="Actividades estudiantiles">
+        <button class="pestana activa" data-actividad="0">⚙ Talleres</button>
+        <button class="pestana" data-actividad="1">♫ Danza y arte</button>
+        <button class="pestana" data-actividad="2">⚽ Deportes</button>
+        <button class="pestana" data-actividad="3">⚑ Honores a la bandera</button>
+    </nav>
+
+    <div class="vida-panel">
+        <button class="vida-flecha" id="vida-anterior" aria-label="Actividad anterior">‹</button>
+
+        <img id="vida-foto" src="imagen/talleres.jpg" alt="Estudiantes en prácticas de taller">
+
+        <div class="vida-info">
+            <p class="vida-etiqueta" id="vida-etiqueta">ACTIVIDAD ITACE</p>
+            <h3 id="vida-nombre">Prácticas en talleres de especialidad</h3>
+            <p id="vida-descripcion">
+                Los estudiantes aplican lo que aprenden en espacios de práctica,
+                como el taller de electrónica o el de máquinas de combustión interna,
+                desarrollando habilidades técnicas.
+            </p>
+            <button id="vida-siguiente" class="vida-siguiente">Siguiente actividad →</button>
+        </div>
+
+        <button class="vida-flecha" id="vida-siguiente-flecha" aria-label="Siguiente actividad">›</button>
+    </div>
+
+    <p class="vida-frase">Construyendo juntos una mejor versión</p>
+</section>
+
+
+
+<!-- PIE DE PÁGINA -->
+<footer class="pie-pagina">
+    <div class="pie-contenido">
+        <h2>ITACE Plantel Reynosa</h2>
+        <p>Bachillerato Tecnológico</p>
+        <p>Formando jóvenes para el futuro.</p>
+    </div>
+
+    <div class="pie-inferior">
+        <p>Esta no es una pagina oficial!! </p>
+    </div>
+</footer>
+
+
+<script src="anima.js"></script>
+</body>
+</html>

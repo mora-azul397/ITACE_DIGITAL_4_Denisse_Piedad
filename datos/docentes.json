@@ -1,0 +1,248 @@
+
+[
+    {
+        "nombre": "Bertha Alicia Zapata Aldape",
+        "academia": "C6",
+        "materias": ["Matemáticas"],
+        "semestres": ["1.º", "3.º"],
+        "perfil": "Doc. en Educación",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "2 años y medio"
+    },
+    {
+        "nombre": "Omar Saúl Gonzáles Alatriste",
+        "academia": "Prefectura",
+        "materias": ["Prefecto"],
+        "semestres": ["3.º"],
+        "perfil": "sin informacion",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "32 años"
+    },
+    {
+        "nombre": "Nohemí Quintanilla Arcos",
+        "academia": "Prefectura",
+        "materias": ["Prefecta"],
+        "semestres": ["sin informacion"],
+        "perfil": "sin informacion",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "sin informacion"
+    },
+     {
+        "nombre": "José López Vázquez",
+        "academia": "--",
+        "materias": ["modulo mantenimiento industrial"],
+        "semestres": ["3.º","5.º", "tarde"],
+        "perfil": "Ign. industrial",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "sin informacion"
+    },
+    {
+        "nombre": "Brenda Itzel Herrera Grcía",
+        "academia": "--",
+        "materias": ["Cultura Digital, Inteligencia Artificial"],
+        "semestres": ["1.º", "3.º"],
+        "perfil": "Técnica en informática ,Ingeniera en sistemas computacionales y maestría en educación ",
+        "fotografia": "Maestros/brenda.jpeg",
+        "antiguedad": "4 años"
+    },
+    {
+        "nombre": "Isidro De Leon Flores",
+        "academia": "Explanada",
+        "materias": ["Premilitar"],
+        "semestres": ["Todos los semestres"],
+        "perfil": "Lic.en Psicopedagogia y Lic. en Pedagogia",
+        "fotografia": "Maestros/isidro.jpeg",
+        "antiguedad": "29 años"
+    },
+    {
+        "nombre": "Walter Alan Barrera Cerda",
+        "academia": "A2",
+        "materias": ["Ingles 3 y Club de Rondalla"],
+        "semestres": ["1.º", "2.º", "3.º"],
+        "perfil": "Ing. Industrial y Administración",
+        "fotografia": "Maestros/walter.jpeg",
+        "antiguedad": "13 años"
+    },
+    {
+        "nombre": "Luis Enrique Lerma Martines",
+        "academia": "B2",
+        "materias": ["Lengua y Comunicación","Socioemocional", "Conciencia Historica"],
+        "semestres": ["1.º", "2.º", "3.º"],
+        "perfil": "Lic. en Pedagogia, Ing. Petrolero, Diplomado en competencias Docentes",
+        "fotografia": "Maestros/Lerma.jpeg",
+        "antiguedad": "33 años"
+    },
+    {
+        "nombre": "Gerardo De La Rosa Ortega",
+        "academia": "A4",
+        "materias": ["Ingles"],
+        "semestres": ["5.º"],
+        "perfil": "Lic. en Contaduria",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Erika Aide Perez Abrego",
+        "academia": "A1",
+        "materias": ["Ciencias Naturales", "Humanidades"],
+        "semestres": ["3.º","5.º"],
+        "perfil": "Ing. Industrial, Ing. en Sistemas, Maestria en Educación",
+        "fotografia": "Maestros/Erika.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Samuel Gonzales De La Fuente",
+        "academia": "C7",
+        "materias": ["Pensamiento Filosofico"],
+        "semestres": ["1.º","3.º"],
+        "perfil": "Lic. en Administración de Empresas, Carrera Tecnica de Ebanisteria",
+        "fotografia": "Maestros/samuel.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Norma Elena Torres Quiñones",
+        "academia": "C4",
+        "materias": ["Ciencias Naturales"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Ing. Quimico, Mtr. en Docencia",
+        "fotografia": "Maestros/Norma.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Benjamín Limón Martínez",
+        "academia": "Labotarorio 5",
+        "materias": ["Informatica","Mod.Programación e Inteligencia Artificial","Cultura Digital"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Administracion en Productividad y Calidad, Mtr. en Educación",
+        "fotografia": "Maestros/Limon2.jpeg",
+        "antiguedad": "5 años"
+    },
+    {
+        "nombre": "Karla Valeria Moran Lerna",
+        "academia": "B3",
+        "materias": ["Pensamiento Filosofico","Cienias SOciales","Cultura Digital"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Mtr. en Docencia",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "33 años"
+    },
+    {
+        "nombre": "Liliana Rosas Pacheco",
+        "academia": "A8",
+        "materias": ["Humanidades","Pensamiento Filosofico","Conciencia Historica","Lengua y Comunicación","Formación Socioemocional"],
+        "semestres": ["1.º","5.º"],
+        "perfil": "Lic. en Pedagogia, Mtr. en Educación Media Superior y Doc. en Educación",
+        "fotografia": "Maestros/Liliana.jpeg",
+        "antiguedad": "5 años"
+    },
+    {
+        "nombre": "Sandra Catalina Silva Camacho",
+        "academia": "B4",
+        "materias": ["Lengua y Comunicación, Literatura"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Mtr. en Metodologia de la Enseñanza",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "25 años"
+    },
+    {
+        "nombre": "Grecia Avalos Ramos",
+        "academia": "B1",
+        "materias": ["Lengua y Comunicación"],
+        "semestres": ["1.º","3.º"],
+        "perfil": "Lic. en Maestria",
+        "fotografia": "Maestros/grecia.jpeg",
+        "antiguedad": "3 años"
+    },
+    {
+        "nombre": "Carlos Malecio Carmona Olivares",
+        "academia": "C5 y L2",
+        "materias": ["Mod. Diseño Grafico","Ingles"],
+        "semestres": ["1.º","3.º"],
+        "perfil": "Lig. en Sistemas, Doc. en Maestria en Educación Basíca",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "2 años"
+    },
+    {
+        "nombre": "Laura Esmeralda Herida Blanco",
+        "academia": "A7",
+        "materias": ["Ciencias Naturales"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Biologia, Especialidad en Física y Química",
+        "fotografia": "Maestros/Laura.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Felipe Hernandez Gonzales",
+        "academia": "inf. no disponible",
+        "materias": ["Electronica y Semiconductores","Lengua y Comunicación","Conciencia Historica"],
+        "semestres": ["3.º","5.º"],
+        "perfil": "Ing, en Electronica",
+        "fotografia": "Maestros/Felipe.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Yuridia Lizbeth Cepeda Ramos",
+        "academia": "A5",
+        "materias": ["Matematicas","Ingles"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Mtr.en Educación e Innovación Educativa, Doc.en Educación",
+        "fotografia": "Maestros/Yuridia.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Juan Pablo Torres Adame",
+        "academia": "inf. no disponible",
+        "materias": ["Programación","Cultura Digital","Clob Robotica"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Lic. en Información Administrativa y Mtr. en Ciencias de la Enseñanza",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "1 años"
+    },
+    {
+        "nombre": "Romualdo Guadalupe De La Cruz",
+        "academia": "inf. no disponible",
+        "materias": ["Pensamiento Matematico"],
+        "semestres": ["1.º","3.º"],
+        "perfil": "Ing. Mantenimiento Industrial e Industrias Petroleras",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Ulises Solis Rieboles",
+        "academia": "inf. no disponible",
+        "materias": ["Ciencias Naturales"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Biologo, Mtr. en Analisis Clinicos, Doc. en Educación",
+        "fotografia": "Maestros/Ulises.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Trinidad Hernandez Barrera",
+        "academia": "C7",
+        "materias": ["Ciencias Naturales"],
+        "semestres": ["1.º","3.º"],
+        "perfil": "Biologo",
+        "fotografia": "Maestros/Trinidad.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Erik Ramirez Solis",
+        "academia": "inf. no disponible",
+        "materias": ["Pensamiento Matematico"],
+        "semestres": ["1.º","3.º","5.º"],
+        "perfil": "Lic. Electromecanica, Mtr. en Educación",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Mildred Yazmin Reyes Norberto",
+        "academia": "C1",
+        "materias": ["Temas Selectos Matematicos"],
+        "semestres": ["5.º"],
+        "perfil": "Ing. Quimico, Mtr. en Docencia",
+        "fotografia": "Maestros/Mildred.jpeg",
+        "antiguedad": "Informacion no autorizada"
+    }
+    
+
+]
