@@ -2948,3 +2948,215 @@ body {
     font-style: italic;
     font-weight: bold;
 }
+
+
+
+/*audio*/
+/* REPRODUCTOR ITACE */
+.reproductor {
+    width: 240px;
+    max-width: calc(100vw - 30px);
+    box-sizing: border-box;
+    padding: 14px;
+
+    background: #4b1020;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+
+    box-shadow: 0 0 12px #4b102055;
+
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+
+    cursor: grab;
+    touch-action: none;
+}
+
+/* ECUALIZADOR */
+.ecualizador {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.ecualizador span {
+    width: 5px;
+    height: 3px;
+    flex-shrink: 0;
+
+    background: #d4af37;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #d4af37;
+
+    transition: height 0.08s ease;
+}
+
+/* AUDIO */
+.reproductor audio {
+    display: block;
+    width: 100%;
+    height: 35px;
+}
+
+/* TEXTO */
+.reproductor .mensaje {
+    margin: 10px 0 0;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #f3e5c0;
+    text-align: center;
+}
+
+
+
+/* AJUSTES PARA TELÉFONOS */
+@media (max-width: 768px) {
+
+    /* Menú */
+    .encabezado {
+        padding: 10px 14px;
+        gap: 10px;
+    }
+
+    .marca {
+        font-size: 1.2rem;
+    }
+
+    .encabezado nav {
+        width: 100%;
+        justify-content: center;
+        gap: 8px 14px;
+    }
+
+    .encabezado nav a {
+        font-size: 0.85rem;
+    }
+
+    /* Portada */
+    .portada {
+        min-height: 75vh;
+    }
+
+    .portada-texto {
+        padding: 160px 20px 70px;
+    }
+
+    /* Secciones con dos columnas */
+    .escuela,
+    .inscripcion,
+    .contacto,
+    .noticia-principal {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Tarjetas */
+    .datos {
+        grid-template-columns: repeat(2, 1fr);
+        width: 92%;
+    }
+
+    .datos div {
+        padding: 18px 10px;
+    }
+
+    .datos strong {
+        font-size: 1.8rem;
+    }
+
+    .identidad-tarjetas,
+    .noticias-grid,
+    .directorio-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .fechas-itace {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Galería */
+    .galeria-fotos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .foto img,
+    .categoria-galeria .foto,
+    .contenido-galeria .foto {
+        height: 220px;
+    }
+
+    /* Himnos */
+    .himno-panoramico {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Vida estudiantil */
+    .vida-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .vida-panel img {
+        height: 240px;
+    }
+
+    .vida-flecha {
+        justify-self: center;
+    }
+
+    /* Ubicación y contacto */
+    .ubicacion .direccion,
+    .contacto-lista {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .ubicacion .mapa img {
+        height: 260px;
+    }
+
+    /* Reproductor de música */
+    .reproductor {
+        width: 210px;
+        left: 10px;
+        bottom: 10px;
+        padding: 10px;
+    }
+
+    .ecualizador {
+        height: 30px;
+    }
+}
+
+/* Teléfonos muy pequeños */
+@media (max-width: 480px) {
+    .fechas-itace,
+    .galeria-fotos {
+        grid-template-columns: 1fr;
+    }
+
+    .preguntas-frecuentes {
+        padding: 70px 18px 55px;
+    }
+
+    .pregunta-item summary {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .pregunta-item p {
+        padding: 0 18px 20px;
+    }
+
+    .preguntas-ayuda {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px 20px;
+    }
+}
