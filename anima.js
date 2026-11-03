@@ -331,22 +331,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const actividades = [
         {
             nombre: "Prácticas en talleres de especialidad",
-            imagen: "imagen/talleres.jpg",
+            imagen: "imagen/maquinas.jpeg",
             descripcion: "Los estudiantes aplican lo que aprenden en espacios de práctica, como el taller de electrónica o el de máquinas de combustión interna, desarrollando habilidades técnicas."
         },
         {
             nombre: "Danza, arte y presentaciones",
-            imagen: "imagen/danza.jpg",
+            imagen: "imagen/danza.jpeg",
             descripcion: "La danza permite a los estudiantes expresar su creatividad mediante el movimiento y la música, promoviendo la cultura, la coordinación y el trabajo en equipo."
         },
         {
             nombre: "Deportes",
-            imagen: "imagen/deportes.jpg",
+            imagen: "imagen/deporte2.jpeg",
             descripcion: "Los clubes deportivos, como fútbol y voleibol, fomentan la actividad física, la disciplina, el compañerismo y el respeto, además de impulsar hábitos saludables."
         },
         {
             nombre: "Honores a la bandera",
-            imagen: "imagen/honores.jpg",
+            imagen: "imagen/honoress.jpeg",
             descripcion: "Las ceremonias cívicas fortalecen el respeto por los símbolos patrios, los valores cívicos y el sentido de identidad y responsabilidad de los estudiantes."
         }
     ];
@@ -624,3 +624,46 @@ reproductor.addEventListener("pointercancel", () => {
     moviendo = false;
     reproductor.style.cursor = "grab";
 });
+
+
+
+
+
+
+
+
+const contadores = document.querySelectorAll(".contador");
+
+const animarContador = (contador) => {
+    const valorFinal = Number(contador.dataset.valor);
+    const duracion = 1500;
+    const inicio = performance.now();
+
+    const actualizar = (tiempoActual) => {
+        const progreso = Math.min((tiempoActual - inicio) / duracion, 1);
+        const valorActual = Math.floor(progreso * valorFinal);
+
+        contador.textContent = valorActual.toLocaleString("es-MX");
+
+        if (progreso < 1) {
+            requestAnimationFrame(actualizar);
+        } else {
+            contador.textContent = valorFinal.toLocaleString("es-MX");
+        }
+    };
+
+    requestAnimationFrame(actualizar);
+};
+
+const observador = new IntersectionObserver((entradas, observer) => {
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+            animarContador(entrada.target);
+            observer.unobserve(entrada.target);
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+contadores.forEach((contador) => observador.observe(contador));

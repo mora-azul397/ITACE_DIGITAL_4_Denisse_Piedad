@@ -43,7 +43,7 @@
                     <a href="#galeria">Galeria</a>
                     <a href="#himnos">Himnos</a>
                     <a href="#noticias">Noticias</a>
-                    <a href="#vida-estudiantil">Proyectos estudiantiles</a>
+                    <a href="#vida-estudiantil">Vida estudiantil</a>
                     <a href="#preguntas">Preguntas frecuentes</a>
                 </div>
         </details>
@@ -64,20 +64,20 @@
 <main>
     <!--tarjeta sobre el borde de la portada -->
   <section class="datos" aria-label="Datos del plantel" id="inicio">
-    <div>
-        <strong>1,452</strong>
+   <div>
+        <strong class="contador" data-valor="1452">0</strong>
         <span>alumnos en el ciclo 2025-2026</span>
     </div>
     <div>
-        <strong>7</strong>
+        <strong class="contador" data-valor="7">0</strong>
         <span>especialidades de bachillerato tecnológico</span>
     </div>
     <div>
-        <strong>1984</strong>
+        <strong class="contador" data-valor="1984">0</strong>
         <span>año de creación del ITACE</span>
     </div>
     <div>
-        <strong>2</strong>
+        <strong class="contador" data-valor="2">0</strong>
         <span>turnos: matutino y vespertino</span>
     </div>
   </section>
@@ -1220,22 +1220,6 @@
                 fechas importantes, actividades y comunicados.
             </p>
         </details>
-
-    </div>
-
-    <div class="preguntas-ayuda">
-        <div>
-            <span class="preguntas-etiqueta">¿NECESITAS MÁS INFORMACIÓN?</span>
-            <h2>¿No encontraste tu respuesta?</h2>
-            <p>
-                Comunícate con el plantel para resolver tus dudas
-                directamente con el personal correspondiente.
-            </p>
-        </div>
-
-        <a href="contacto.html" class="preguntas-boton">
-            Ir a contacto <span>↗</span>
-        </a>
     </div>
 </section>
 
@@ -1250,7 +1234,7 @@
     </div>
 
     <article class="noticia-principal">
-        <img src="imagen/noticia-principal.jpg" alt="Banda de Guerra y Grupo de Danza del ITACE">
+        <img src="imagen/honores.jpeg" alt="Banda de Guerra y Grupo de Danza del ITACE">
         <div class="noticia-contenido">
             <time datetime="2026-10-26">26 de octubre de 2026</time>
             <h3>Talento y orgullo ITACE llegan a las secundarias de Reynosa</h3>
@@ -1271,7 +1255,7 @@
 
     <div class="noticias-grid">
         <article class="noticia-tarjeta">
-            <img src="imagen/noticia1.jpg" alt="Plática de concientización sobre el cáncer de mama">
+            <img src="imagen/platica.jpeg" alt="Plática de concientización sobre el cáncer de mama">
             <div class="noticia-contenido">
                 <time datetime="2026-10-21">21 de octubre de 2026</time>
                 <h3>Cuidarnos es un acto de amor</h3>
@@ -1289,7 +1273,7 @@
         </article>
 
         <article class="noticia-tarjeta">
-            <img src="imagen/noticia2.jpg" alt="Torneo interno amistoso de ajedrez">
+            <img src="imagen/ajedez.jpeg" alt="Torneo interno amistoso de ajedrez">
             <div class="noticia-contenido">
                 <time datetime="2026-10-21">21 de octubre de 2026</time>
                 <h3>ITACE Reynosa fortalece la mente y las emociones a través del ajedrez</h3>
@@ -1311,7 +1295,7 @@
         </article>
 
         <article class="noticia-tarjeta">
-            <img src="imagen/noticia3.jpg" alt="Reconocimiento al ITACE por su participación en el Teletón 2026">
+            <img src="imagen/maestros.jpg" alt="Reconocimiento al ITACE por su participación en el Teletón 2026">
             <div class="noticia-contenido">
                 <time datetime="2026-10-12">12 de octubre de 2026</time>
                 <h3>Un corazón que transforma vidas</h3>
@@ -1340,13 +1324,13 @@
         <button class="pestana activa" data-actividad="0">⚙ Talleres</button>
         <button class="pestana" data-actividad="1">♫ Danza y arte</button>
         <button class="pestana" data-actividad="2">⚽ Deportes</button>
-        <button class="pestana" data-actividad="3">⚑ Honores a la bandera</button>
+        <button class="pestana" data-actividad="3">⚑ Honores</button>
     </nav>
 
     <div class="vida-panel">
         <button class="vida-flecha" id="vida-anterior" aria-label="Actividad anterior">‹</button>
 
-        <img id="vida-foto" src="imagen/talleres.jpg" alt="Estudiantes en prácticas de taller">
+        <img id="vida-foto" src="imagen/maquinas.jpeg" alt="Estudiantes en prácticas de taller">
 
         <div class="vida-info">
             <p class="vida-etiqueta" id="vida-etiqueta">ACTIVIDAD ITACE</p>

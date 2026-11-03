@@ -3160,4 +3160,17 @@ body {
         padding: 28px 20px;
     }
 }
+@media (max-width: 768px) {
+    .historia-itace {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
 
+    .historia-itace p {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        white-space: normal;
+    }
+}
