@@ -3160,41 +3160,4 @@ body {
         padding: 28px 20px;
     }
 }
-/* Historia y menú en teléfonos */
-@media (max-width: 768px) {
 
-    /* El menú deja de cubrir el contenido al desplazarse */
-    .menu-fijo {
-        position: relative;
-        top: auto;
-    }
-
-    body {
-        padding-top: 0;
-    }
-
-    /* Texto de la historia */
-    .historia-itace,
-    #historia-contenido {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        padding: 25px 16px;
-    }
-
-    .historia-itace p,
-    #historia-contenido p,
-    .historia-itace li,
-    #historia-contenido li {
-        max-width: 100%;
-        overflow-wrap: anywhere;
-        line-height: 1.7;
-    }
-
-    /* Evita que las tarjetas o fechas se salgan de la pantalla */
-    .historia-itace *,
-    #historia-contenido * {
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-}
