@@ -242,6 +242,15 @@
         "perfil": "Ing. Quimico, Mtr. en Docencia",
         "fotografia": "Maestros/Mildred.jpeg",
         "antiguedad": "Informacion no autorizada"
+    },
+    {
+        "nombre": "Omar Saúl González Alatriste",
+        "academia": "Prefecto",
+        "materias": ["Prefecto"],
+        "semestres": ["sin informacion"],
+        "perfil": "sin informacion",
+        "fotografia": "Maestros/sin foto.jpg",
+        "antiguedad": "32 años"
     }
     
 

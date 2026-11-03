@@ -1,162 +1,3 @@
-// ===== INFORMACIÓN DE LOS DIRECTORES DEL ITACE =====
-
-const directores = [
-    {
-        nombre: "Profr. Arturo Lerma Anaya",
-        cargo: "Director General",
-        imagen: "imagen/lerma anaya.png",
-        descripcion: "Fue un destacado maestro, educador y gestor tamaulipeco",
-        detalles: [
-            "Periodo de gestión: 1984 - 1997.",
-            "Reconocido principalmente como el fundador",
-            "Primer director general del Instituto Tamaulipeco de Capacitación para el Empleo (ITACE)."
-        ]
-    },
-    {
-        nombre: "Profr. Roberto Alanís Hernández",
-        cargo: "Director General",
-        imagen: "imagen/Profr.Roberto Alanis Hernandez.jpg",
-        descripcion: "Primer diirector Académico del sistema ITACE Matamoros.",
-        detalles: [
-            "Periodo de gestión: 1997 - 1999.",
-            "Director General del sistema"
-        ]
-
-    },
-    {
-        nombre: "Ing. Guillermo Barthel Cisneros",
-        cargo: "Director General",
-        imagen: "maestros/sin foto.jpg",
-        descripcion: "Dirigió la institución durante el periodo de 1999 a 2001.",
-        detalles: [
-            "Periodo de gestión: 1999 - 2001."
-        ]
-    },
-    {
-        nombre: "Vicealmirante Rafael A. Irigoyen González",
-        cargo: "Director General",
-        imagen: "maestros/sin foto.jpg",
-        descripcion: "Estuvo al frente de la institución durante el periodo de 2001 a 2004.",
-        detalles: [
-            "Periodo de gestión: 2001 - 2004."
-        ]
-    },
-    {
-        nombre: "Lic. Santos Lozano Cedillo",
-        cargo: "Director General",
-        imagen: "maestros/sin foto.jpg",
-        descripcion: "Su periodo al frente del ITACE comprendió de 2005 a 2011.",
-        detalles: [
-            "Periodo de gestión: 2005 - 2011."
-        ]
-    },
-    {
-        nombre: "Lic. Federico Manautou Villarreal",
-        cargo: "Director General",
-        imagen: "maestros/sin foto.jpg",
-        descripcion: "Dirigió la institución durante el periodo comprendido entre 2011 y 2016.",
-        detalles: [
-            "Periodo de gestión: 2011 - 2016."
-        ]
-    },
-    {
-        nombre: "Lic. Luis Fernando Campos Martínez",
-        cargo: "Director General",
-        imagen: "maestros/sin foto.jpg",
-        descripcion: "Estuvo al frente del ITACE entre 2016 y 2020.",
-        detalles: [
-            "Periodo de gestión: 2016 - 2020."
-        ]
-    },
-    {
-        nombre: "Mtro. Óscar Jesús Ballesteros González",
-        cargo: "Director General",
-        imagen: "maestros/sin foto.jpg ",
-        descripcion: "Dirigió la institución durante el periodo de 2020 a 2022.",
-        detalles: [
-            "Periodo de gestión: 2020 - 2022."
-        ]
-    },
-    {
-        nombre: "Dra. Claudia Anaya Alvarado",
-        cargo: "Directora General ",
-        imagen: "imagen/claudia.jpg",
-        descripcion: "Es la directora correspondiente al periodo iniciado en 2022.",
-        detalles: [
-            "Periodo de gestión: 2022 - a la fecha."
-        ]
-    }
-];
-
-
-// ===== ELEMENTOS DEL CARRUSEL =====
-
-const imagenDirector = document.getElementById("imagen-persona");
-const nombreDirector = document.getElementById("nombre-persona");
-const cargoDirector = document.getElementById("cargo-persona");
-const descripcionDirector = document.getElementById("descripcion-persona");
-const detallesDirector = document.getElementById("detalles-persona");
-const contadorDirector = document.getElementById("contador-personaje");
-
-const botonAnterior = document.getElementById("persona-anterior");
-const botonSiguiente = document.getElementById("personaje-siguiente");
-
-let indiceDirector = 0;
-
-
-// ===== MOSTRAR DIRECTOR =====
-
-function mostrarDirector(indice) {
-    if (!imagenDirector || !nombreDirector || !cargoDirector ||
-        !descripcionDirector || !detallesDirector || !contadorDirector) {
-        return;
-    }
-
-    indiceDirector = (indice + directores.length) % directores.length;
-
-    const director = directores[indiceDirector];
-
-    imagenDirector.src = director.imagen;
-    imagenDirector.alt = director.nombre;
-
-    nombreDirector.textContent = director.nombre;
-    cargoDirector.textContent = director.cargo;
-    descripcionDirector.textContent = director.descripcion;
-
-    // Mostrar los detalles del director
-    detallesDirector.replaceChildren();
-
-    director.detalles.forEach(detalle => {
-        const elemento = document.createElement("li");
-        elemento.textContent = detalle;
-        detallesDirector.appendChild(elemento);
-    });
-
-    // Actualizar el contador
-    contadorDirector.textContent =
-        `${String(indiceDirector + 1).padStart(2, "0")} / ${String(directores.length).padStart(2, "0")}`;
-}
-
-
-// ===== BOTONES DE NAVEGACIÓN =====
-
-if (botonAnterior) {
-    botonAnterior.addEventListener("click", () => {
-        mostrarDirector(indiceDirector - 1);
-    });
-}
-
-if (botonSiguiente) {
-    botonSiguiente.addEventListener("click", () => {
-        mostrarDirector(indiceDirector + 1);
-    });
-}
-
-
-// ===== MOSTRAR EL PRIMER DIRECTOR =====
-
-mostrarDirector(0);
-
 
 // ===== BOTÓN DE LA LÍNEA DEL TIEMPO =====
 
@@ -582,10 +423,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const secciones = [...document.querySelectorAll(selectores.join(","))];
 
     const paginas = {
-        inicio: [".portada", ".datos"],
-        descripccion: [".escuela"],
-        historia: [".galeria-persona", ".historia-itace"],
-        identidad: [".identidad-itace"],
+        inicio: [".portada", ".datos",".escuela"],
+        historia: [".galeria-persona", ".historia-itace",".identidad-itace"],
         himnos: [".himnos-itace"],
         especialidades: [".espec:nth-of-type(1)"],
         inscripcion: [".inscripcion"],
@@ -666,3 +505,122 @@ audios.forEach((audio) => {
     });
 });
 
+
+const cancion = document.getElementById("cancion");
+const barras = document.querySelectorAll("#ecualizador span");
+
+let contexto;
+let analizador;
+let datos;
+let fuente;
+
+cancion.addEventListener("play", () => {
+
+    if (!contexto) {
+        contexto = new AudioContext();
+
+        analizador = contexto.createAnalyser();
+        analizador.fftSize = 128;
+
+        datos = new Uint8Array(
+            analizador.frequencyBinCount
+        );
+
+        fuente = contexto.createMediaElementSource(cancion);
+
+        fuente.connect(analizador);
+        analizador.connect(contexto.destination);
+    }
+
+    contexto.resume();
+
+    animarOndas();
+});
+
+function animarOndas() {
+
+    if (cancion.paused || cancion.ended) {
+        barras.forEach(barra => {
+            barra.style.height = "3px";
+        });
+
+        return;
+    }
+
+    analizador.getByteFrequencyData(datos);
+
+    barras.forEach((barra, i) => {
+
+        const sonido = datos[i * 2] || 0;
+
+        const altura = Math.max(
+            3,
+            (sonido / 255) * 60
+        );
+
+        barra.style.height = altura + "px";
+    });
+
+    requestAnimationFrame(animarOndas);
+}
+const reproductor = document.querySelector(".reproductor");
+
+let moviendo = false;
+let inicioX, inicioY;
+let posicionX, posicionY;
+
+reproductor.addEventListener("pointerdown", (e) => {
+
+    // Evita moverlo al usar los controles de audio
+    if (e.target.closest("audio")) return;
+
+    moviendo = true;
+
+    const rect = reproductor.getBoundingClientRect();
+
+    inicioX = e.clientX;
+    inicioY = e.clientY;
+
+    posicionX = rect.left;
+    posicionY = rect.top;
+
+    reproductor.style.left = posicionX + "px";
+    reproductor.style.top = posicionY + "px";
+    reproductor.style.bottom = "auto";
+
+    reproductor.style.cursor = "grabbing";
+
+    reproductor.setPointerCapture(e.pointerId);
+});
+
+reproductor.addEventListener("pointermove", (e) => {
+
+    if (!moviendo) return;
+
+    let nuevaX = posicionX + (e.clientX - inicioX);
+    let nuevaY = posicionY + (e.clientY - inicioY);
+
+    // Evita que salga de la pantalla
+    nuevaX = Math.max(
+        0,
+        Math.min(nuevaX, window.innerWidth - reproductor.offsetWidth)
+    );
+
+    nuevaY = Math.max(
+        0,
+        Math.min(nuevaY, window.innerHeight - reproductor.offsetHeight)
+    );
+
+    reproductor.style.left = nuevaX + "px";
+    reproductor.style.top = nuevaY + "px";
+});
+
+reproductor.addEventListener("pointerup", () => {
+    moviendo = false;
+    reproductor.style.cursor = "grab";
+});
+
+reproductor.addEventListener("pointercancel", () => {
+    moviendo = false;
+    reproductor.style.cursor = "grab";
+});
