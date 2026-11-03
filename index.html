@@ -8,6 +8,7 @@
 </head>
 <body>
 <!--portada principal de la pagina-->
+<div class="grupo-inicio">
     <section class="portada" id="inicio">
 
         <!--esto sirve para poner una imagen de fondo en un texto-->
@@ -17,23 +18,19 @@
 
         <!--este es para el logotipo del itace-->
         <header class="encabezado menu-fijo">
-    <a class="marca" href="#inicio">
-      <img src="imagen/abeja.png" alt="Logotipo del ITACE" class="logo">
-      <span>ITACE <small>Plantel Reynosa</small></span>
-    </a>
+            <a class="marca" href="#inicio">
+                <img src="imagen/abeja.png" alt="Logotipo del ITACE" class="logo">
+                <span>ITACE <small>Plantel Reynosa</small></span>
+            </a>
 
 
    
     <!--botoncitos de la esquina superior de la derecha-->
     <nav aria-label="Principal">
       <a href="#inicio">Inicio</a>
-      <a href="#descripccion">Descripcción</a>
-      <a href="#historia">Historia</a>
-      <a href="#identidad">Valores</a>
+      <a href="#historia">Conocenos</a>
       <a href="#especialidades">Especialidades</a>
       <a href="#inscripcion">Inscripción</a>
-      <a href="#cursos">Cursos</a>
-      <a href="#galeria">Galeria</a>
       <a href="#directorio">Directorio</a>
       <a href="#ubicacion">Ubicación</a>
      
@@ -42,9 +39,11 @@
       <details class="menu-mas">
                 <summary>MÁS ▾</summary>
                 <div class="menu-mas-lista">
+                    <a href="#cursos">Cursos</a>
+                    <a href="#galeria">Galeria</a>
                     <a href="#himnos">Himnos</a>
-                    <a href="#vida-estudiantil">Proyectos estudiantiles</a>
                     <a href="#noticias">Noticias</a>
+                    <a href="#vida-estudiantil">Proyectos estudiantiles</a>
                     <a href="#preguntas">Preguntas frecuentes</a>
                 </div>
         </details>
@@ -101,60 +100,46 @@
     </div>
   </section>
 </main>
+</div>
 
-
-
-<!-- CARRUSEL DE DIRECTORES GENERALES DEL ITACE -->
 <section class="galeria-persona" id="historia">
-
     <div class="titulo-galeria">
         <div>
-            <h2>Directores Generales del ITACE</h2>
+            <h2>Historia del ITACE</h2>
             <p>CONOCE SU HISTORIA</p>
         </div>
         <div class="linea-dorada"></div>
     </div>
 
     <div class="persona-principal">
-
         <div class="zona-retrato">
-
-            <button class="flecha-persona anterior"
-                id="persona-anterior"
-                aria-label="Director anterior">‹</button>
-
             <div class="marco-hexagonal">
-                <img id="imagen-persona"
-                    src="imagen/lerma anaya.png"
-                    alt="Prof. Arturo Lerma Anaya">
+                <img src="imagen/lerma anaya.png"
+                     alt="Profr. Arturo Lerma Anaya">
             </div>
-
-            <button class="flecha-persona siguiente"
-                id="personaje-siguiente"
-                aria-label="Siguiente director">›</button>
-
-            <span class="contador-persona"
-                id="contador-personaje">01 / 09</span>
-
         </div>
 
         <div class="datos-persona">
-            <p class="cargo-persona" id="cargo-persona">
-                Director (1984-1999)
-            </p>
-
-            <h3 id="nombre-persona">Prof. Arturo Lerma Anaya</h3>
-
+            <p class="cargo-persona">Fundación del ITACE</p>
+            <h3>Historia del ITACE</h3>
             <div class="adorno-dorado">━━━━━━━━━━━━</div>
 
-            <p id="descripcion-persona"></p>
-
-            <ul id="detalles-persona"></ul>
+            <p>
+                El ITACE nació hace 41 años como una escuela de oficios fundada
+                por el Profr. Arturo Lerma Anaya. En agosto de 1984, siendo
+                Gobernador del Estado el Dr. Emilio Martínez Manautou, se funda
+                en Cd. Victoria el primer plantel del Instituto Tamaulipeco de
+                Capacitación para el Empleo (ITACE), con el objetivo de preparar
+                y capacitar al alumno para el empleo calificado. En 1991, el
+                Gobierno del Ing. Américo Villarreal Guerra firma con la
+                Secretaría de Educación Pública Federal el convenio para la
+                creación, operación y apoyo financiero de las unidades de
+                Altamira y Reynosa.
+            </p>
         </div>
-
     </div>
-    
 </section>
+
 
 <!-- BOTÓN Y LÍNEA DEL TIEMPO DEL ITACE -->
 <section class="historia-itace" id="historia">
@@ -1380,6 +1365,32 @@
     <p class="vida-frase">Construyendo juntos una mejor versión</p>
 </section>
 
+
+<div class="reproductor">
+
+    <div class="ecualizador" id="ecualizador">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <audio id="cancion" controls loop>
+        <source src="audio-video/homage.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir este audio.
+    </audio>
+
+    <p class="mensaje">AUDIO TRANSMISSION // 001</p>
+
+</div>
 
 
 <!-- PIE DE PÁGINA -->
